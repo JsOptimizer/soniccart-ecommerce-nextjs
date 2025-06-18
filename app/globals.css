@@ -10,3 +10,6 @@
   --color-neutral-50:#FAFAFA
   --color--neutral-100:#F1F1F1
 }
+@theme inline{
+    --font-manrope:var(--font-manrope)
+}

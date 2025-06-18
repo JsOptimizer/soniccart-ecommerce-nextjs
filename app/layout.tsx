@@ -1,3 +1,4 @@
+import { Manrope } from "@next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -10,6 +11,11 @@ import "./globals.css";
 //   variable: "--font-geist-mono",
 //   subsets: ["latin"],
 // });
+
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Sonic Cart",
@@ -24,7 +30,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-      // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${manrope.variable}`}
+        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
