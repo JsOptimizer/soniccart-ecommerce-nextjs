@@ -3,10 +3,22 @@ import { cn } from "../lib";
 
 type Props = {
   title: string;
+  variant?: "default" | "outline";
 };
 
-const CustomBtn: FC<Props> = ({}) => {
-  return <button className={cn(``)}>CustomBtn</button>;
+const CustomBtn: FC<Props> = ({ title, variant = "default" }) => {
+  return (
+    <button
+      className={cn(
+        `px-8 py-4 bg-brand hover:bg-brand-100 flex items-center justify-center text-white font-manrope font-bold text-[13px] cursor-pointer ${
+          variant === "outline" &&
+          "bg-transparent text-neutral-100 hover:text-brand hover:bg-transparent"
+        }`
+      )}
+    >
+      {title}
+    </button>
+  );
 };
 
 export default CustomBtn;
