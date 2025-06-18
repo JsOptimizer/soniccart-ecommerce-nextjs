@@ -1,4 +1,4 @@
-import { CustomInput } from "@/shared/components";
+import { CustomInput, CustomRadio } from "@/shared/components";
 import CustomBtn from "@/shared/components/CustomBtn";
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
       <h1>demo</h1>
       <CustomBtn title="Custom button" />
       <CustomInput title="Name" placeholder="Enter your name" />
+      <CustomRadio title="e-Money" />
     </main>
   );
 }
