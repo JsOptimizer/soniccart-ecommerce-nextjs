@@ -8,6 +8,7 @@ type Props = {
   name?: string;
   value?: string;
   handleChange?: (e: ChangeEvent<HTMLInputElement>) => void;
+  placeholder?: string;
 };
 
 const CustomInput: FC<Props> = ({
@@ -17,6 +18,7 @@ const CustomInput: FC<Props> = ({
   name,
   value,
   handleChange,
+  placeholder,
 }) => {
   return (
     <div className="text-sm flex flex-col gap-1">
@@ -38,6 +40,7 @@ const CustomInput: FC<Props> = ({
         )}
         defaultValue={value}
         onChange={handleChange}
+        placeholder={placeholder}
       />
     </div>
   );
