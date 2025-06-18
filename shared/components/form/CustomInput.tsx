@@ -1,5 +1,5 @@
 import { ChangeEvent, FC } from "react";
-import { cn } from "../lib";
+import { cn } from "../../lib";
 
 type Props = {
   title: string;

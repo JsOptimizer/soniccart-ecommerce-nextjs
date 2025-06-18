@@ -1,5 +1,9 @@
-import { CustomInput, CustomRadio } from "@/shared/components";
-import CustomBtn from "@/shared/components/CustomBtn";
+import {
+  CustomInput,
+  CustomNumberCounter,
+  CustomRadio,
+} from "@/shared/components";
+import CustomBtn from "@/shared/components/form/CustomBtn";
 
 export default function Home() {
   return (
@@ -8,6 +12,7 @@ export default function Home() {
       <CustomBtn title="Custom button" />
       <CustomInput title="Name" placeholder="Enter your name" />
       <CustomRadio title="e-Money" />
+      <CustomNumberCounter />
     </main>
   );
 }
