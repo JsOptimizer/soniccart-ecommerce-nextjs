@@ -1,15 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-*: initial;
   --color-brand: #d87d4a;
   --color-brand-100: #fbaf85;
   --color-black: #000;
-  --color--black-950: #101010;
+  --color-black-950: #101010;
   --color-white: #fff;
-  --color-neutral-50:#FAFAFA
-  --color-neutral-100:#F1F1F1
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f1f1f1;
 }
-@theme inline{
-    --font-manrope:var(--font-manrope)
+@theme inline {
+  --font-manrope: var(--font-manrope);
 }
