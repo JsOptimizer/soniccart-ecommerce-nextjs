@@ -8,6 +8,7 @@
   --color-white: #fff;
   --color-neutral-50: #fafafa;
   --color-neutral-100: #f1f1f1;
+  /* --background-image-desktop-hero: url("image-hero.jpg"); */
 }
 @theme inline {
   --font-manrope: var(--font-manrope);

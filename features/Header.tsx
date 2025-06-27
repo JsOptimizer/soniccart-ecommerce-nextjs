@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 const Header = () => {
   return (
-    <header className="bg-black w-full">
-      <div className="mx-auto container text-white py-4 px-32 flex justify-between">
+    <header className="bg-transparent fixed z-30 w-full">
+      <div className="mx-auto container text-white py-8 px-32 flex justify-between">
         <Image
           src={"/audiophile.png"}
           height={50}
