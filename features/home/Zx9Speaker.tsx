@@ -1,8 +1,8 @@
 const Zx9Speaker = () => {
   return (
-    <section className="bg-brand rounded-lg relative max-h-96">
+    <section className="bg-brand rounded-lg relative max-h-[560px] ">
       <svg
-        className="relative right-40"
+        className="relative -top-10 right-32"
         width="944"
         height="944"
         xmlns="http://www.w3.org/2000/svg"
