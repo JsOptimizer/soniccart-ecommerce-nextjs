@@ -1,18 +1,35 @@
+import { cn } from "@/shared/lib";
 import Image from "next/image";
 import Link from "next/link";
-const Header = () => {
+import { FC } from "react";
+
+type Props = {
+  className?: string;
+};
+
+const Header: FC<Props> = ({ className }) => {
   return (
-    <header className="bg-transparent fixed z-30 w-full">
-      <div className="mx-auto container text-white py-8 px-32 flex justify-between">
-        <Image
-          src={"/audiophile.png"}
-          height={50}
-          width={200}
-          alt="logo"
-          className="w-28"
-        />
-        <nav>
-          <ul className="flex itc gap-8 text-sm text-neutral-100 uppercase text-[13px]">
+    <header className={cn("bg-transparent fixed z-30 w-full", className)}>
+      <div className="mx-auto container text-white py-8 sm:px-16 lg:px-32 flex justify-between">
+        <div className="flex items-center gap-16">
+          <div className="lg:hidden">
+            <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#FFF" fillRule="evenodd">
+                <path d="M0 0h16v3H0zM0 6h16v3H0zM0 12h16v3H0z" />
+              </g>
+            </svg>
+          </div>
+
+          <Image
+            src={"/audiophile.png"}
+            height={50}
+            width={200}
+            alt="logo"
+            className="w-28"
+          />
+        </div>
+        <nav className="lg:block hidden">
+          <ul className="flex items-center gap-8 text-sm text-neutral-100 uppercase text-[13px]">
             <li>
               <Link href={""}>Home</Link>
             </li>

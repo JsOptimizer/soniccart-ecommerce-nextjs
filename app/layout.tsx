@@ -1,4 +1,3 @@
-import { Header } from "@/features";
 import { Manrope } from "@next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
@@ -34,7 +33,6 @@ export default function RootLayout({
         className={`${manrope.variable} font-manrope`}
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header />
         {children}
       </body>
     </html>
