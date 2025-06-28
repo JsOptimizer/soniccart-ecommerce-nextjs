@@ -2,3 +2,4 @@ export { default as CustomInput } from "./form/CustomInput";
 export { default as CustomNumberCounter } from "./form/CustomNumberCounter";
 export { default as CustomRadio } from "./form/CustomRadio";
 export { default as Header } from "./Header";
+export { default as ProductCategoryList } from "./ProductCategoryList";
