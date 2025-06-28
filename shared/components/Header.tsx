@@ -9,7 +9,7 @@ type Props = {
 
 const Header: FC<Props> = ({ className }) => {
   return (
-    <header className={cn("bg-transparent fixed z-30 w-full", className)}>
+    <header className={cn("bg-transparent absolute z-30 w-full", className)}>
       <div className="mx-auto container text-white py-8 sm:px-16 lg:px-32 flex justify-between">
         <div className="flex items-center gap-16">
           <div className="lg:hidden">
