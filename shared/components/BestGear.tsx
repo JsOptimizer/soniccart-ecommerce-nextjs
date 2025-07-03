@@ -1,6 +1,6 @@
 const BestGear = () => {
   return (
-    <section className="flex items-center justify-center flex-wrap-reverse gap-8 px-8 sm:px-16 lg:px-32">
+    <section className="flex items-center justify-center flex-wrap-reverse gap-8   lg:justify-between ">
       <div className="flex flex-col items-start   gap-4  ">
         <p className="uppercase  font-bold font-manrope text-[40px] ">
           bringing you the
