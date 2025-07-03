@@ -1,5 +1,10 @@
 import { Hero, Yx1EarPhones, Zx7Speaker, Zx9Speaker } from "@/features";
-import { Header, ProductCategoryList } from "@/shared/components";
+import {
+  BestGear,
+  Footer,
+  Header,
+  ProductCategoryList,
+} from "@/shared/components";
 
 export default function Home() {
   return (
@@ -12,6 +17,8 @@ export default function Home() {
         <Zx7Speaker />
         <Yx1EarPhones />
       </section>
+      <BestGear />
+      <Footer />
     </main>
   );
 }
