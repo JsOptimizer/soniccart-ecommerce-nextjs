@@ -7,7 +7,7 @@ const Zx9Speaker = () => {
   return (
     <section className="bg-brand rounded-lg relative h-auto lg:min-h-[480px] lg:h-[65vh] z-0 overflow-hidden sm:p-16 lg:p-32">
       <svg
-        className="absolute -left-32 -top-10  z-0"
+        className="absolute left-0 right-0  lg:-left-32  lg:-top-10  z-0 flex items-center justify-center"
         width="944"
         height="944"
         xmlns="http://www.w3.org/2000/svg"
