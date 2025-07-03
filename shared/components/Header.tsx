@@ -2,6 +2,7 @@ import { cn } from "@/shared/lib";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
+import { navigationLinks } from "../constants/nav-link";
 
 type Props = {
   className?: string;
@@ -30,18 +31,11 @@ const Header: FC<Props> = ({ className }) => {
         </div>
         <nav className="lg:block hidden">
           <ul className="flex items-center gap-8 text-sm text-neutral-100 uppercase text-[13px]">
-            <li>
-              <Link href={""}>Home</Link>
-            </li>
-            <li>
-              <Link href={""}>Headphones</Link>
-            </li>
-            <li>
-              <Link href={""}>Speakers</Link>
-            </li>
-            <li>
-              <Link href={""}>EarPhones</Link>
-            </li>
+            {navigationLinks.map(({ path, title }) => (
+              <li key={path}>
+                <Link href={path}>{title}</Link>
+              </li>
+            ))}
           </ul>
         </nav>
         <div>
