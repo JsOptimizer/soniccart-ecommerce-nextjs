@@ -8,9 +8,9 @@ import {
 
 const page = () => {
   return (
-    <main className="w-full flex flex-col gap-32">
+    <main className="w-full flex flex-col gap-32 items-center">
       <Header className="bg-black static" title={"HeapPhones"} />
-      <section className="px-32 flex flex-col gap-32 w-full">
+      <section className=" container px-32 flex flex-col gap-32 w-full">
         <Xx99Mark2 />
         <ProductCategoryList />
       </section>
