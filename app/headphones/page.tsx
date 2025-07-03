@@ -10,7 +10,7 @@ const page = () => {
   return (
     <main className="w-full flex flex-col gap-32">
       <Header className="bg-black static" title={"HeapPhones"} />
-      <section className="px-32 flex flex-col gap-32">
+      <section className="px-32 flex flex-col gap-32 w-full">
         <Xx99Mark2 />
         <ProductCategoryList />
       </section>
