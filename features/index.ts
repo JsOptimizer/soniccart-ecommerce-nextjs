@@ -1,3 +1,4 @@
+export { default as XX99Mark1 } from "./headphones/XX99Mark1";
 export { default as Xx99Mark2 } from "./headphones/Xx99Mark2";
 export { default as Hero } from "./home/Hero";
 export { default as Yx1EarPhones } from "./home/Yx1EarPhones";
