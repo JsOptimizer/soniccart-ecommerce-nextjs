@@ -2,7 +2,7 @@ import CustomBtn from "@/shared/components/form/CustomBtn";
 
 const XX99Mark1 = () => {
   return (
-    <section className="flex items-center  lg:flex-row flex-col-reverse gap-16 lg:gap-0 lg:justify-between w-full">
+    <section className="flex items-center  lg:flex-row flex-col-reverse gap-16  lg:justify-between w-full">
       <div className="flex flex-col items-center lg:items-start gap-4">
         <p className="uppercase text-[40px] font-bold ">
           XX99 Mark I<br />

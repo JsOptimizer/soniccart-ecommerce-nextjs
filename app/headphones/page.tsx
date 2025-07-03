@@ -1,4 +1,4 @@
-import { XX99Mark1, Xx99Mark2 } from "@/features";
+import { XX59Mark, XX99Mark1, Xx99Mark2 } from "@/features";
 import {
   BestGear,
   Footer,
@@ -13,6 +13,7 @@ const page = () => {
       <section className=" container p-8 flex flex-col gap-32 w-full lg:px-16">
         <Xx99Mark2 />
         <XX99Mark1 />
+        <XX59Mark />
         <ProductCategoryList />
         <BestGear />
       </section>
