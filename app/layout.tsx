@@ -1,3 +1,4 @@
+import { BestGear } from "@/shared/components";
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
@@ -30,10 +31,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${manrope.variable} font-manrope`}
+        className={`${manrope.variable} font-manrope flex flex-col gap-32`}
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <BestGear />
       </body>
     </html>
   );
