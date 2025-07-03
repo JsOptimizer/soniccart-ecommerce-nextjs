@@ -6,9 +6,10 @@ import { navigationLinks } from "../constants/nav-link";
 
 type Props = {
   className?: string;
+  title?: string | null;
 };
 
-const Header: FC<Props> = ({ className }) => {
+const Header: FC<Props> = ({ className, title = null }) => {
   return (
     <header className={cn("bg-transparent absolute z-30 w-full", className)}>
       <div className="mx-auto container text-white py-8 sm:px-16 lg:px-32 flex justify-between">
@@ -48,6 +49,11 @@ const Header: FC<Props> = ({ className }) => {
           </svg>
         </div>
       </div>
+      {title && (
+        <h1 className="text-white text-center py-8 text-[40px] sm:block hidden uppercase font-bold ">
+          {title}
+        </h1>
+      )}
     </header>
   );
 };
