@@ -3,7 +3,7 @@ import xx99Mobile from "../assets/product-xx99-mark-two-headphones/mobile/image-
 import xx99tablet from "../assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg";
 import { TImage } from "../types";
 
-export const headphones: {
+export const headphoneFeatures: {
   isNew?: boolean;
   source: TImage;
   name: string;

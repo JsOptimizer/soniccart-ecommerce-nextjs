@@ -30,7 +30,7 @@ const ProductShowCase: FC<Props> = ({
       <CustomImage
         alt={name}
         {...source}
-        className="h-[362px] w-full lg:h-[560px]"
+        className="h-[362px] w-full lg:h-[560px] lg:min-w-[540px]"
       />
       <div className="flex flex-col items-center lg:items-start gap-4">
         {isNew && (
