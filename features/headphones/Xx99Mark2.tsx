@@ -1,10 +1,7 @@
 import { CustomImage } from "@/shared/components";
 import CustomBtn from "@/shared/components/form/CustomBtn";
-import jsonData from "@/shared/data.json";
 
 const Xx99Mark2 = () => {
-  const headphones = jsonData[0];
-  console.log(headphones);
   return (
     <section className="flex items-center flex-col lg:flex-row  gap-16  lg:justify-between w-full">
       {/* <div className=":bg-[url('/headphones/mobile/image-category-page-preview.jpg')] sm:h-[362px] w-full sm:bg-[url('/headphones/tablet/image-category-page-preview.jpg')] lg:bg-[url('/headphones/desktop/image-category-page-preview.jpg')]   rounded-md bg-cover bg-center lg:w-[540px] lg:h-[560px] " /> */}
