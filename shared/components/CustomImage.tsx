@@ -19,7 +19,9 @@ const CustomImage: FC<Props> = ({
   mobileSrc,
   tabletSrc,
 }) => {
-  const [currentSrc, setCurrentSrc] = useState<string | StaticImport>("");
+  const [currentSrc, setCurrentSrc] = useState<string | StaticImport>(
+    desktopSrc
+  );
   useEffect(() => {
     const handleResize = () => {
       const { innerWidth: currentWidth } = window;
@@ -46,7 +48,9 @@ const CustomImage: FC<Props> = ({
       <Image
         src={currentSrc}
         alt={alt}
-        className={cn("rounded-md object-cover", className)}
+        width={500}
+        height={500}
+        className={cn("rounded-md object-cover w-full", className)}
       />
     </div>
   );
