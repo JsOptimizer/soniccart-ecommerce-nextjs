@@ -5,6 +5,7 @@ import ProductShowCase from "./ProductShowcase";
 type Props = {
   products: {
     isNew?: boolean;
+    nameBreak: number;
     source: TImage;
     name: string;
     desc: string;
