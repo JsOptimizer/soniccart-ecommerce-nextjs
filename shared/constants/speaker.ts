@@ -11,12 +11,14 @@ export const speakerFeatures: {
   source: TImage;
   name: string;
   desc: string;
+  nameBreak: number;
   id?: number;
 }[] = [
   {
     id: 1,
     isNew: true,
     name: "ZX9\nSPEAKER",
+    nameBreak: 3,
     desc: "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",
     source: {
       desktop: zx9Desktop,
@@ -27,6 +29,7 @@ export const speakerFeatures: {
   {
     id: 1,
     name: "ZX7\nSPEAKER",
+    nameBreak: 3,
     desc: "Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
     source: {
       desktop: zx7Desktop,

@@ -11,6 +11,7 @@ type Props = {
   desc: string;
   className?: string;
   id?: number;
+  nameBreak: number;
 };
 
 const ProductShowCase: FC<Props> = ({
@@ -18,6 +19,7 @@ const ProductShowCase: FC<Props> = ({
   name,
   source,
   isNew,
+  nameBreak,
   className,
 }) => {
   return (
@@ -36,7 +38,11 @@ const ProductShowCase: FC<Props> = ({
         {isNew && (
           <h3 className="uppercase tracking-[15px] text-brand ">new product</h3>
         )}
-        <p className="uppercase text-[40px] font-bold ">{name}</p>
+        <p className="uppercase text-[40px] font-bold ">
+          {name.slice(0, nameBreak)}
+          <br />
+          {name.slice(nameBreak)}
+        </p>
         <p className="text-[15px] max-w-[445px] text-black/60 text-center lg:text-left ">
           {desc}
         </p>

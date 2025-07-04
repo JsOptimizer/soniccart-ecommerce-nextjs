@@ -14,12 +14,14 @@ export const headphoneFeatures: {
   source: TImage;
   name: string;
   desc: string;
+  nameBreak: number;
   id?: number;
 }[] = [
   {
     id: 1,
     isNew: true,
     name: "XX99 Mark II Headphones",
+    nameBreak: 10,
     desc: "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
     source: {
       desktop: xx99Desktop,
@@ -30,6 +32,7 @@ export const headphoneFeatures: {
   {
     id: 1,
     name: "XX99 Mark I Headphones",
+    nameBreak: 10,
     desc: "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
     source: {
       desktop: xx99IDesktop,
@@ -40,6 +43,7 @@ export const headphoneFeatures: {
   {
     id: 1,
     name: "XX59 Headphones",
+    nameBreak: 4,
     desc: "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.",
     source: {
       desktop: xx59Desktop,

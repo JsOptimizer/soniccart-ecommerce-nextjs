@@ -7,6 +7,7 @@ export const earphoneFeatures: {
   isNew?: boolean;
   source: TImage;
   name: string;
+  nameBreak: number;
   desc: string;
   id?: number;
 }[] = [
@@ -14,6 +15,7 @@ export const earphoneFeatures: {
     id: 1,
     isNew: true,
     name: "YX1 WIRELESS EARPHONES",
+    nameBreak: 12,
     desc: "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
     source: {
       desktop: yx1Desktop,
