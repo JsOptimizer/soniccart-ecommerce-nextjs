@@ -3,35 +3,31 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import { FC, useEffect, useState } from "react";
 import { cn } from "../lib";
+import { TImage } from "../types";
 
 type Props = {
-  desktopSrc: string | StaticImport;
-  tabletSrc: string | StaticImport;
-  mobileSrc: string | StaticImport;
   alt: string;
   className?: string;
-};
+} & TImage;
 
 const CustomImage: FC<Props> = ({
   className,
   alt,
-  desktopSrc,
-  mobileSrc,
-  tabletSrc,
+  desktop,
+  mobile,
+  tablet,
 }) => {
-  const [currentSrc, setCurrentSrc] = useState<string | StaticImport>(
-    desktopSrc
-  );
+  const [currentSrc, setCurrentSrc] = useState<string | StaticImport>(desktop);
   useEffect(() => {
     const handleResize = () => {
       const { innerWidth: currentWidth } = window;
 
       if (currentWidth >= 1024) {
-        setCurrentSrc(desktopSrc);
+        setCurrentSrc(desktop);
       } else if (currentWidth >= 640 && currentWidth < 1024) {
-        setCurrentSrc(tabletSrc);
+        setCurrentSrc(tablet);
       } else {
-        setCurrentSrc(mobileSrc);
+        setCurrentSrc(mobile);
       }
     };
 
@@ -42,7 +38,7 @@ const CustomImage: FC<Props> = ({
 
     // This line removes the event listener for the 'resize' event
     return () => window.removeEventListener("resize", handleResize);
-  }, [desktopSrc, mobileSrc, tabletSrc]);
+  }, [desktop, mobile, tablet]);
   return (
     <div>
       <Image
