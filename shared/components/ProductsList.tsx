@@ -1,3 +1,4 @@
+import { suggestProducts } from "../constants";
 import ProductCard from "./ProductCard";
 
 const ProductsList = () => {
@@ -7,8 +8,8 @@ const ProductsList = () => {
         you may also like
       </p>
       <div className="grid lg:grid-cols-3 gap-8">
-        {Array.from({ length: 3 }).map((_, idx) => (
-          <ProductCard key={idx} name="" />
+        {suggestProducts.map((product, idx) => (
+          <ProductCard key={idx} {...product} />
         ))}
       </div>
     </section>
