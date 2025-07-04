@@ -36,7 +36,7 @@ const Header: FC<Props> = ({ className, title = null }) => {
           />
         </div>
         <nav className="lg:block hidden">
-          <ul className="flex items-center gap-8 text-sm text-neutral-100 uppercase text-[13px]">
+          <ul className="flex items-center gap-8 sm:gap-16 text-sm text-neutral-100 uppercase text-[13px]">
             {navigationLinks.map(({ path, title }) => (
               <li key={path}>
                 <Link href={path}>{title}</Link>
