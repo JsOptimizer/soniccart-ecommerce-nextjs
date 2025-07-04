@@ -1,3 +1,5 @@
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+
 export type TProduct = {
   id: number;
   slug: string;
@@ -15,9 +17,9 @@ export type TProduct = {
 };
 
 export type TImage = {
-  mobile: string;
-  tablet: string;
-  desktop: string;
+  mobile: string | StaticImport;
+  tablet: string | StaticImport;
+  desktop: string | StaticImport;
 };
 
 export type TInclude = {
