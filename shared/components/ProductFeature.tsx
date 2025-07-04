@@ -9,7 +9,8 @@ type Props = {
     source: TImage;
     name: string;
     desc: string;
-    id?: number;
+    path: string;
+    id: number;
   }[];
 };
 

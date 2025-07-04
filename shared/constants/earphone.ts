@@ -9,7 +9,8 @@ export const earphoneFeatures: {
   name: string;
   nameBreak: number;
   desc: string;
-  id?: number;
+  path: string;
+  id: number;
 }[] = [
   {
     id: 1,
@@ -22,5 +23,6 @@ export const earphoneFeatures: {
       tablet: yx1Tablet,
       mobile: yx1Mobile,
     },
+    path: "earphones",
   },
 ];
