@@ -19,7 +19,7 @@ export const headphoneFeatures: {
   path: string;
 }[] = [
   {
-    id: 3,
+    id: 4,
     isNew: true,
     name: "XX99 Mark II Headphones",
     nameBreak: 10,

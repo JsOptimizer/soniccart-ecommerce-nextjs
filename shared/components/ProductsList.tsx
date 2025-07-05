@@ -7,7 +7,7 @@ const ProductsList = () => {
       <p className="text-center text-[32px] uppercase font-bold ">
         you may also like
       </p>
-      <div className="grid lg:grid-cols-3 gap-8">
+      <div className="grid sm:grid-cols-3 gap-8">
         {suggestProducts.map((product, idx) => (
           <ProductCard key={idx} {...product} />
         ))}
