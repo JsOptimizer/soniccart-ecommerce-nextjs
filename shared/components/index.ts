@@ -1,5 +1,6 @@
 export { default as BestGear } from "./BestGear";
 export { default as CustomImage } from "./CustomImage";
+export { default as ProductDetail } from "./detail/ProductDetail";
 export { default as Footer } from "./Footer";
 export { default as CustomInput } from "./form/CustomInput";
 export { default as CustomNumberCounter } from "./form/CustomNumberCounter";
