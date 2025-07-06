@@ -6,10 +6,25 @@ import Preview from "./Preview";
 
 type Props = {} & TProduct;
 
-const ProductDetail: FC<Props> = ({ gallery, name, image }) => {
+const ProductDetail: FC<Props> = ({
+  gallery,
+  name,
+  image,
+  description,
+  new: isNew,
+  price,
+  nameBreak,
+}) => {
   return (
     <>
-      <Preview name={name} image={image} />
+      <Preview
+        name={name}
+        image={image}
+        description={description}
+        price={price}
+        isNew={isNew}
+        nameBreak={nameBreak}
+      />
       <Features />
       <Gallery gallery={gallery} />
     </>
