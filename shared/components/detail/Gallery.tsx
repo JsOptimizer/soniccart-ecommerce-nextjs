@@ -5,6 +5,7 @@ import CustomImage from "../CustomImage";
 type Props = {} & Pick<TProduct, "gallery">;
 
 const Gallery: FC<Props> = ({ gallery }) => {
+  console.log(gallery);
   return (
     <div>
       <CustomImage

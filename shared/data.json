@@ -474,19 +474,19 @@
     ],
     "gallery": {
       "first": {
-        "mobile": "./assets/product-zx9-speaker/mobile/image-gallery-1.jpg",
-        "tablet": "./assets/product-zx9-speaker/tablet/image-gallery-1.jpg",
-        "desktop": "./assets/product-zx9-speaker/desktop/image-gallery-1.jpg"
+        "mobile": "/products/speakers/gallery/mobile/image-gallery-1.jpg",
+        "tablet": "/products/speakers/gallery/tablet/image-gallery-1.jpg",
+        "desktop": "/products/speakers/gallery/desktop/image-gallery-1.jpg"
       },
       "second": {
-        "mobile": "./assets/product-zx9-speaker/mobile/image-gallery-2.jpg",
-        "tablet": "./assets/product-zx9-speaker/tablet/image-gallery-2.jpg",
-        "desktop": "./assets/product-zx9-speaker/desktop/image-gallery-2.jpg"
+        "mobile": "/products/speakers/gallery/mobile/image-gallery-2.jpg",
+        "tablet": "/products/speakers/gallery/image-gallery-2.jpg",
+        "desktop": "/products/speakers/gallery/desktop/image-gallery-2.jpg"
       },
       "third": {
-        "mobile": "./assets/product-zx9-speaker/mobile/image-gallery-3.jpg",
-        "tablet": "./assets/product-zx9-speaker/tablet/image-gallery-3.jpg",
-        "desktop": "./assets/product-zx9-speaker/desktop/image-gallery-3.jpg"
+        "mobile": "/products/speakers/gallery/mobile/image-gallery-3.jpg",
+        "tablet": "/products/speakers/gallery/tablet/image-gallery-3.jpg",
+        "desktop": "/products/speakers/gallery/desktop/image-gallery-3.jpg"
       }
     },
     "others": [
