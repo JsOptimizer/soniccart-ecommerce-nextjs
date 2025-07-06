@@ -16,7 +16,7 @@ const Gallery: FC<Props> = ({ gallery }) => {
           className="w-full  object-cover h-full"
         />
       </div>
-      <div className="row-span-2 col-span-3 ">
+      <div className="row-span-2 col-span-3 order-3 sm:order-none ">
         <CustomImage
           alt="third"
           desktop={gallery.third.desktop}
