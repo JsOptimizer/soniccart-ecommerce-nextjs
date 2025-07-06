@@ -29,7 +29,7 @@ export const speakerFeatures: {
     path: "speakers",
   },
   {
-    id: 1,
+    id: 5,
     name: "ZX7\nSPEAKER",
     nameBreak: 5,
     desc: "Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
