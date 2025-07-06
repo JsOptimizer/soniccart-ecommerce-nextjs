@@ -6,10 +6,10 @@ import Preview from "./Preview";
 
 type Props = {} & TProduct;
 
-const ProductDetail: FC<Props> = ({ gallery }) => {
+const ProductDetail: FC<Props> = ({ gallery, name, image }) => {
   return (
     <>
-      <Preview />
+      <Preview name={name} image={image} />
       <Features />
       <Gallery gallery={gallery} />
     </>

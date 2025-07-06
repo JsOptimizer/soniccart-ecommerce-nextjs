@@ -436,9 +436,9 @@
     "slug": "zx9-speaker",
     "name": "ZX9 Speaker",
     "image": {
-      "mobile": "./assets/product-zx9-speaker/mobile/image-product.jpg",
-      "tablet": "./assets/product-zx9-speaker/tablet/image-product.jpg",
-      "desktop": "./assets/product-zx9-speaker/desktop/image-product.jpg"
+      "mobile": "/products/speakers/zx9/mobile/image-product.jpg",
+      "tablet": "/products/speakers/zx9/tablet/image-product.jpg",
+      "desktop": "/products/speakers/zx9/desktop/image-product.jpg"
     },
     "category": "speakers",
     "categoryImage": {
@@ -474,19 +474,19 @@
     ],
     "gallery": {
       "first": {
-        "mobile": "/products/speakers/gallery/mobile/image-gallery-1.jpg",
-        "tablet": "/products/speakers/gallery/tablet/image-gallery-1.jpg",
-        "desktop": "/products/speakers/gallery/desktop/image-gallery-1.jpg"
+        "mobile": "/products/speakers/zx9/mobile/image-gallery-1.jpg",
+        "tablet": "/products/speakers/zx9/tablet/image-gallery-1.jpg",
+        "desktop": "/products/speakers/zx9/desktop/image-gallery-1.jpg"
       },
       "second": {
-        "mobile": "/products/speakers/gallery/mobile/image-gallery-2.jpg",
-        "tablet": "/products/speakers/gallery/image-gallery-2.jpg",
-        "desktop": "/products/speakers/gallery/desktop/image-gallery-2.jpg"
+        "mobile": "/products/speakers/zx9/mobile/image-gallery-2.jpg",
+        "tablet": "/products/speakers/zx9/image-gallery-2.jpg",
+        "desktop": "/products/speakers/zx9/desktop/image-gallery-2.jpg"
       },
       "third": {
-        "mobile": "/products/speakers/gallery/mobile/image-gallery-3.jpg",
-        "tablet": "/products/speakers/gallery/tablet/image-gallery-3.jpg",
-        "desktop": "/products/speakers/gallery/desktop/image-gallery-3.jpg"
+        "mobile": "/products/speakers/zx9/mobile/image-gallery-3.jpg",
+        "tablet": "/products/speakers/zx9/tablet/image-gallery-3.jpg",
+        "desktop": "/products/speakers/zx9/desktop/image-gallery-3.jpg"
       }
     },
     "others": [
