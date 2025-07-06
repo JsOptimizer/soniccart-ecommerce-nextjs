@@ -12,7 +12,7 @@ export const speakerFeatures: {
   name: string;
   desc: string;
   nameBreak: number;
-  id?: number;
+  id: number;
   path: string;
 }[] = [
   {
