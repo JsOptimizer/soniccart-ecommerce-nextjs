@@ -14,6 +14,8 @@ const ProductDetail: FC<Props> = ({
   new: isNew,
   price,
   nameBreak,
+  features,
+  includes,
 }) => {
   return (
     <>
@@ -25,7 +27,7 @@ const ProductDetail: FC<Props> = ({
         isNew={isNew}
         nameBreak={nameBreak}
       />
-      <Features />
+      <Features features={features} includes={includes} />
       <Gallery gallery={gallery} />
     </>
   );
