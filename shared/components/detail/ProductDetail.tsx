@@ -1,10 +1,11 @@
 import { TProduct } from "@/shared/types";
+import Link from "next/link";
 import { FC } from "react";
 import Features from "./Features";
 import Gallery from "./Gallery";
 import Preview from "./Preview";
 
-type Props = {} & TProduct;
+type Props = { listPath?: string } & TProduct;
 
 const ProductDetail: FC<Props> = ({
   gallery,
@@ -16,17 +17,26 @@ const ProductDetail: FC<Props> = ({
   nameBreak,
   features,
   includes,
+  listPath,
 }) => {
   return (
     <>
-      <Preview
-        name={name}
-        image={image}
-        description={description}
-        price={price}
-        isNew={isNew}
-        nameBreak={nameBreak}
-      />
+      <div className="flex flex-col gap-4">
+        <Link
+          href={`/${listPath}`}
+          className="text-black/60 text-sm capitalize   "
+        >
+          Go back
+        </Link>
+        <Preview
+          name={name}
+          image={image}
+          description={description}
+          price={price}
+          isNew={isNew}
+          nameBreak={nameBreak}
+        />
+      </div>
       <Features features={features} includes={includes} />
       <Gallery gallery={gallery} />
     </>

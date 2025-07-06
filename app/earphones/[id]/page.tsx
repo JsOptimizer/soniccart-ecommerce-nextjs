@@ -18,10 +18,10 @@ const page: FC<Props> = async ({ params }) => {
   const { id } = await params;
   const product = products.find((data) => data.id === +id);
   return (
-    <main className="w-full flex flex-col gap-32 items-center">
+    <main className="w-full flex flex-col gap-4 items-center">
       <Header className="bg-black static" />
       <section className=" container p-8 flex flex-col gap-32 w-full lg:px-16">
-        <ProductDetail {...(product as TProduct)} />
+        <ProductDetail {...(product as TProduct)} listPath="earphones" />
         <ProductsList />
         <ProductCategoryList />
         <BestGear />

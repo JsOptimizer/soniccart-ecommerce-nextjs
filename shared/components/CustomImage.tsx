@@ -45,9 +45,10 @@ const CustomImage: FC<Props> = ({
         src={currentSrc}
         alt={alt}
         width={1000}
-        height={1000}
+        height={500}
         className={cn("rounded-md object-cover w-full", className)}
-        // placeholder="blur"
+        placeholder="blur"
+        blurDataURL="/blur.png"
       />
     </div>
   );
