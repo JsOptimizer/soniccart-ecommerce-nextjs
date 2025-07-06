@@ -37,7 +37,12 @@ const Preview: FC<Props> = ({
         <p className="text-[15px] max-w-[445px] text-black/60 text-center sm:text-left ">
           {description}
         </p>
-        <p>{price}</p>
+        <p className="font-bold">
+          ${` `}
+          {new Intl.NumberFormat("en-IN", { maximumFractionDigits: 3 }).format(
+            price
+          )}
+        </p>
         <div className="flex items-center gap-4">
           <CustomNumberCounter />
           <CustomBtn title="Add to cart" className="py-4" />

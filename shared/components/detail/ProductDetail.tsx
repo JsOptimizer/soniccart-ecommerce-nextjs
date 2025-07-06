@@ -22,7 +22,10 @@ const ProductDetail: FC<Props> = ({
   return (
     <>
       <div className="flex flex-col gap-4">
-        <Link href={`/${listPath}`} className="text-black/60 capitalize ">
+        <Link
+          href={`/${listPath}`}
+          className="text-black/60 text-sm capitalize   "
+        >
           Go back
         </Link>
         <Preview
