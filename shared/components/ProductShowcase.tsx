@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FC } from "react";
 import { cn } from "../lib";
 import { TImage } from "../types";
@@ -10,8 +11,9 @@ type Props = {
   name: string;
   desc: string;
   className?: string;
-  id?: number;
+  id: number;
   nameBreak: number;
+  path: string;
 };
 
 const ProductShowCase: FC<Props> = ({
@@ -21,6 +23,8 @@ const ProductShowCase: FC<Props> = ({
   isNew,
   nameBreak,
   className,
+  path,
+  id,
 }) => {
   return (
     <article
@@ -46,7 +50,9 @@ const ProductShowCase: FC<Props> = ({
         <p className="text-[15px] max-w-[445px] text-black/60 text-center lg:text-left ">
           {desc}
         </p>
-        <CustomBtn title="see product" />
+        <Link href={`/${path}/${id}`}>
+          <CustomBtn title="see product" />
+        </Link>
       </div>
     </article>
   );

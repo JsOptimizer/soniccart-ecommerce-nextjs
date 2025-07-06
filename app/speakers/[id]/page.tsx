@@ -12,7 +12,6 @@ import { FC } from "react";
 type Props = {
   params: Promise<{ id: string }>;
 };
-
 const page: FC<Props> = async ({ params }) => {
   const { id } = await params;
   const product = products.find((data) => data.id === +id);

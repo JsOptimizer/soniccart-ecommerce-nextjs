@@ -12,10 +12,11 @@ export const speakerFeatures: {
   name: string;
   desc: string;
   nameBreak: number;
-  id?: number;
+  id: number;
+  path: string;
 }[] = [
   {
-    id: 1,
+    id: 6,
     isNew: true,
     name: "ZX9\nSPEAKER",
     nameBreak: 3,
@@ -25,16 +26,18 @@ export const speakerFeatures: {
       tablet: zx9Tablet,
       mobile: zx9Mobile,
     },
+    path: "speakers",
   },
   {
-    id: 1,
+    id: 5,
     name: "ZX7\nSPEAKER",
-    nameBreak: 3,
+    nameBreak: 5,
     desc: "Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
     source: {
       desktop: zx7Desktop,
       tablet: zx7Tablet,
       mobile: zx7Mobile,
     },
+    path: "speakers",
   },
 ];

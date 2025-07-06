@@ -9,6 +9,7 @@ import {
 import products from "@/shared/data.json";
 import { TProduct } from "@/shared/types";
 import { FC } from "react";
+
 type Props = {
   params: Promise<{ id: string }>;
 };

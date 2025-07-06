@@ -14,6 +14,7 @@ export type TProduct = {
   includes: TInclude[];
   gallery: TGallery;
   others: TOther[];
+  nameBreak?: number;
 };
 
 export type TImage = {

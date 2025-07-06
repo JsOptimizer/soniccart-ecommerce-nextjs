@@ -1,4 +1,4 @@
-# 🎧 SonicCart – High-End Audio E-commerce
+# 🎧 SonicCart – High-End Audio E-commerce (Demo)
 
 <div align="center">
 
@@ -7,25 +7,21 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/soniccart-ecommerce-nextjs?style=social)](https://github.com/yourusername/soniccart-ecommerce-nextjs/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/soniccart-ecommerce-nextjs?style=social)](https://github.com/yourusername/soniccart-ecommerce-nextjs/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/yourusername/soniccart-ecommerce-nextjs)](https://github.com/yourusername/soniccart-ecommerce-nextjs/issues)
-[![GitHub license](https://img.shields.io/github/license/yourusername/soniccart-ecommerce-nextjs)](https://github.com/yourusername/soniccart-ecommerce-nextjs/blob/main/LICENSE)
-
 </div>
 
 ## 📝 Overview
 
-SonicCart is a modern, responsive e-commerce platform specializing in high-end audio equipment. Built as a Frontend Mentor challenge project, it demonstrates advanced frontend development practices using Next.js and modern web technologies.
+SonicCart is a modern, responsive e-commerce demo platform specializing in high-end audio equipment. It is a static frontend project built with Next.js, TypeScript, and Tailwind CSS, showcasing clean architecture, reusable components, and a premium user interface. This project is ideal for learning, portfolio demonstration, or as a starting point for a full-stack e-commerce build.
 
 ### 🌟 Features
 
 - 🎯 **Responsive Design**: Optimized for all devices (mobile, tablet, desktop)
-- 🛒 **Shopping Cart**: Persistent cart with localStorage integration
 - 🔍 **Product Browsing**: Category-based navigation and detailed product pages
-- 💳 **Checkout System**: Form validation and secure checkout process
-- 🎨 **Modern UI**: Pixel-perfect implementation of premium design
-- ⚡ **Performance**: Optimized for speed and user experience
+- 🎨 **Modern UI**: Pixel-perfect implementation of a premium design
+- 🧩 **Reusable Components**: Modular, maintainable codebase
+- 🗂 **Static Data**: All product data is loaded from local JSON files
+
+> **Note:** This project is a static demo. Shopping cart, checkout, authentication, and backend integration are not implemented. "Add to cart" buttons and similar UI elements are non-functional placeholders.
 
 ## 🚀 Getting Started
 
@@ -39,8 +35,8 @@ SonicCart is a modern, responsive e-commerce platform specializing in high-end a
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/soniccart-ecommerce-nextjs.git
-cd soniccart-ecommerce-nextjs
+git clone <your-repo-url>
+cd sonic-cart
 ```
 
 2. Install dependencies:
@@ -64,63 +60,47 @@ yarn dev
 ## 🏗 Project Structure
 
 ```
-soniccart-ecommerce-nextjs/
-├── app/                    # Next.js 13+ app directory
-│   ├── (routes)/          # Route groups
-│   ├── api/               # API routes
-│   └── layout.tsx         # Root layout
-├── components/            # Reusable components
-├── lib/                   # Utility functions
-├── public/               # Static assets
-├── styles/               # Global styles
-└── types/                # TypeScript types
+sonic-cart/
+├── app/                # Next.js app directory (routes, layouts, pages)
+│   ├── earphones/      # Earphones category and product pages
+│   ├── headphones/     # Headphones category and product pages
+│   ├── speakers/       # Speakers category and product pages
+│   └── ...             # Root, error, loading, not-found, etc.
+├── features/           # Feature-specific UI components
+├── shared/
+│   ├── assets/         # Images and static assets
+│   ├── components/     # Reusable UI components
+│   ├── constants/      # Static data and config
+│   ├── types/          # TypeScript types
+│   └── ...
+├── public/             # Public static files
+├── package.json        # Project metadata and scripts
+└── ...
 ```
 
 ## 🛠 Tech Stack
 
-- **Framework**: [Next.js 13+](https://nextjs.org/)
+- **Framework**: [Next.js 15](https://nextjs.org/)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **State Management**: React Context API
-- **Form Handling**: React Hook Form
-- **Validation**: Zod
-- **Deployment**: Vercel
+- **UI**: Custom, reusable React components
 
 ## 📱 Pages & Routes
 
 - `/` - Homepage
-- `/category/[slug]` - Category pages
-- `/product/[slug]` - Product details
-- `/cart` - Shopping cart
-- `/checkout` - Checkout process
-- `/confirmation` - Order confirmation
-
-## 🧪 Testing
-
-```bash
-# Run unit tests
-npm run test
-
-# Run e2e tests
-npm run test:e2e
-```
-
-## 📦 Build
-
-```bash
-# Create production build
-npm run build
-
-# Start production server
-npm start
-```
+- `/headphones` - Headphones category
+- `/headphones/[id]` - Headphones product details
+- `/speakers` - Speakers category
+- `/speakers/[id]` - Speakers product details
+- `/earphones` - Earphones category
+- `/earphones/[id]` - Earphones product details
 
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create your feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -m 'Add YourFeature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
 5. Open a Pull Request
 
 ## 📄 License
@@ -129,7 +109,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- [Frontend Mentor](https://www.frontendmentor.io/) for the original challenge
+- [Frontend Mentor](https://www.frontendmentor.io/) for the original challenge inspiration
 - [Next.js](https://nextjs.org/) team for the amazing framework
 - All contributors who have helped shape this project
 
