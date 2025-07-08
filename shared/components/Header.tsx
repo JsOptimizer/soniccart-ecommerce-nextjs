@@ -16,11 +16,11 @@ const Header: FC<Props> = ({ className, title = null }) => {
   return (
     <header
       className={cn(
-        "bg-transparent left-0 ring-0 absolute z-30 w-full",
+        "bg-transparent  left-0 ring-0 absolute z-50 w-full",
         className
       )}
     >
-      <div className="mx-auto container text-white py-8 sm:px-8 lg:px-16 flex justify-between">
+      <div className="mx-auto container text-white py-4 sm:px-8 lg:px-16 flex justify-between">
         <div className="flex items-center gap-16">
           <div className="lg:hidden">
             <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +58,7 @@ const Header: FC<Props> = ({ className, title = null }) => {
         </button>
       </div>
       {title && (
-        <h1 className="text-white text-center py-8 text-[40px] sm:block hidden uppercase font-bold ">
+        <h1 className="text-white text-center py-4 text-[40px] sm:block hidden uppercase font-bold ">
           {title}
         </h1>
       )}
