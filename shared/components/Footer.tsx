@@ -4,7 +4,7 @@ import { navigationLinks } from "../constants/nav-link";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-black flex items-center justify-center">
+    <footer className="w-full bg-black flex items-center justify-center mt-auto">
       <section className="w-full mt-auto text-white container p-8 lg:p-16  items-center justify-center sm:items-start sm:justify-normal flex flex-col gap-8">
         <div className="flex  lg:items-center gap-4 sm:justify-between flex-col sm:flex-row w-full">
           <Image src={"/audiophile.png"} alt="logo" width={100} height={50} />

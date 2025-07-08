@@ -17,7 +17,7 @@ const CustomNumberCounter: FC<Props> = ({ value, handleChange }) => {
     if (handleChange) handleChange(+count);
   }, [count, handleChange]);
   return (
-    <div className="flex items-center justify-between min-w-24 bg-neutral-100 p-4 text-sm select-none">
+    <div className="flex items-center justify-between min-w-24 bg-neutral-100 p-2 text-sm select-none">
       <button
         onClick={handleDecreaseCount}
         className="hover:text-brand cursor-pointer"
