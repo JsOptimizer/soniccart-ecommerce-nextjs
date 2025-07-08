@@ -1,7 +1,9 @@
+import CheckoutForm from "./CheckoutForm";
+
 const Checkout = () => {
   return (
     <section>
-      <div></div>
+      <CheckoutForm />
     </section>
   );
 };
