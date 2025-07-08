@@ -1,8 +1,16 @@
+"use client";
 import CustomBtn from "@/shared/components/form/CustomBtn";
 import { currencyFormatter } from "@/shared/lib";
 import Image from "next/image";
+import { useState } from "react";
+import Checkoutvalidate from "./Checkoutvalidate";
 
 const CartPreview = () => {
+  const [validateCheckout, setValidateCheckout] = useState(false);
+
+  const handleCheckout = () => {
+    setValidateCheckout(true);
+  };
   return (
     <section className="bg-white p-8 rounded-md flex flex-col gap-4 h-auto text-sm text-black/50">
       <h4 className="font-bold text-xl uppercase">Summary</h4>
@@ -50,7 +58,11 @@ const CartPreview = () => {
           {currencyFormatter().format(3434)}
         </span>
       </div>
-      <CustomBtn title="Continue and Pay" />
+      <CustomBtn title="Continue and Pay" onClick={handleCheckout} />
+      <Checkoutvalidate
+        open={validateCheckout}
+        onClose={() => setValidateCheckout(!open)}
+      />
     </section>
   );
 };
