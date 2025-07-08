@@ -2,15 +2,14 @@
 import React, { FC, useEffect, useRef } from "react";
 import { cn } from "../lib";
 
-// Props: open, onClose, children, className
-interface ModalProps {
+type Props = {
   open: boolean;
   onClose?: () => void;
   children: React.ReactNode;
   className?: string;
-}
+};
 
-const Modal: FC<ModalProps> = ({ open, onClose, children, className }) => {
+const Modal: FC<Props> = ({ open, onClose, children, className }) => {
   const backdropRef = useRef<HTMLDivElement>(null);
 
   // Prevent background scroll when open
