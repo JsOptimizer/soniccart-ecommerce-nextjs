@@ -1,9 +1,11 @@
+import CartPreview from "./CartPreview";
 import CheckoutForm from "./CheckoutForm";
 
 const Checkout = () => {
   return (
-    <section>
+    <section className="grid grid-flow-col gap-4 items-start">
       <CheckoutForm />
+      <CartPreview />
     </section>
   );
 };
