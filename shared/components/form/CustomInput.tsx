@@ -21,7 +21,7 @@ const CustomInput: FC<Props> = ({
   placeholder,
 }) => {
   return (
-    <div className="text-sm flex flex-col gap-1">
+    <div className="text-sm flex flex-col gap-1 w-full">
       <div
         className={cn(
           `flex items-center justify-between ${isError && "text-red-500"}`
