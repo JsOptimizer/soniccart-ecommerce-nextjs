@@ -8,21 +8,21 @@ const CheckoutForm = () => {
       <div className="flex w-full flex-col gap-4">
         <h5 className="text-brand">Billing Details</h5>
         <div className="grid grid-cols-2 gap-4">
-          <CustomInput title="Name" placeholder="Michael Olalekan" />
-          <CustomInput title="Email Address" placeholder="example@gmail.com" />
-          <CustomInput title="Phone Number" placeholder="+22890928435" />
+          <CustomInput title="Name" placeholder="Alexei Ward" />
+          <CustomInput title="Email Address" placeholder="alexei@mail.com" />
+          <CustomInput title="Phone Number" placeholder="+1 202-555-0136" />
         </div>
       </div>
 
       <div className="flex w-full flex-col gap-4">
         <h5 className="text-brand">Shipping Info</h5>
         <div className="col-span-2">
-          <CustomInput title="Address" placeholder="Lome-agoee" />
+          <CustomInput title="Address" placeholder="1137 Williams Avenue" />
         </div>
         <div className="grid grid-cols-2 gap-4">
-          <CustomInput title="ZipCode" placeholder="+2278" />
-          <CustomInput title="City" placeholder="Lome" />
-          <CustomInput title="Country" placeholder="Togo" />
+          <CustomInput title="ZipCode" placeholder="+10001" />
+          <CustomInput title="City" placeholder="New York" />
+          <CustomInput title="Country" placeholder="United States" />
         </div>
       </div>
 
@@ -34,8 +34,8 @@ const CheckoutForm = () => {
             <CustomRadio title="e-money" />
             <CustomRadio title="cash on delivery" />
           </div>
-          <CustomInput title="e-money number" placeholder="489583423" />
-          <CustomInput title="e-money pin" placeholder="4535" />
+          <CustomInput title="e-money number" placeholder="238521993" />
+          <CustomInput title="e-money pin" placeholder="6891" />
         </div>
       </div>
     </section>
