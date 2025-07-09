@@ -28,3 +28,41 @@ export const cartProduct: {
     quantity: 1,
   },
 ];
+
+export const cartPreview: {
+  total: number;
+  vat: number;
+  grandTotal: number;
+  shipping: number;
+  products: {
+    path: StaticImport;
+    price: number;
+    quantity: number;
+    name: string;
+  }[];
+} = {
+  total: 5396,
+  shipping: 50,
+  vat: 1079,
+  grandTotal: 5446,
+  products: [
+    {
+      path: xx99Path,
+      name: "xx99 mk ii",
+      price: 2999,
+      quantity: 1,
+    },
+    {
+      name: "xx59",
+      path: xx59Path,
+      quantity: 2,
+      price: 899,
+    },
+    {
+      name: "yx1",
+      path: yx1,
+      price: 599,
+      quantity: 1,
+    },
+  ],
+};
