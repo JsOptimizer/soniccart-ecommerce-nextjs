@@ -18,6 +18,18 @@ const Checkoutvalidate: FC<Props> = ({ open, onClose }) => {
     >
       <section className="container flex  items-center justify-center">
         <div className="min-w-[500px] rounded-md bg-white flex flex-col gap-8 p-8 ">
+          <div>
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fillRule="evenodd">
+                <circle fill="#D87D4A" cx="32" cy="32" r="32" />
+                <path
+                  stroke="#FFF"
+                  strokeWidth="4"
+                  d="m20.754 33.333 6.751 6.751 15.804-15.803"
+                />
+              </g>
+            </svg>
+          </div>
           <h4 className="text-[32px] font-bold text-black ">
             THANK YOU
             <br />
