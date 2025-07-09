@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
+import { cartProduct } from "../constants/cart";
 import { currencyFormatter } from "../lib";
 import Modal from "./Modal";
 import CustomBtn from "./form/CustomBtn";
@@ -22,28 +23,30 @@ const CartForm: FC<Props> = ({ onClose, open }) => {
             <button className="text-black/50">Remove all </button>
           </div>
           <div className="flex flex-col gap-4">
-            {Array.from({ length: 3 }).map((_, idx) => (
+            {cartProduct.map(({ name, path, price, quantity }, idx) => (
               <div key={idx} className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <Image
-                    src={"/image-earphones-tab-yx1.jpg"}
-                    alt="product"
+                    src={path}
+                    alt={name}
                     height={50}
                     width={50}
                     className="size-16 rounded-md"
                   />
                   <div className="flex flex-col">
-                    <span>name</span>
-                    <span>price</span>
+                    <span>{name}</span>
+                    <span>{currencyFormatter().format(price)}</span>
                   </div>
                 </div>
-                <CustomNumberCounter />
+                <CustomNumberCounter value={quantity} />
               </div>
             ))}
           </div>
           <div className="flex items-center justify-between">
             <p className="uppercase text-black/50">Total</p>
-            <span className="font-bold">{currencyFormatter().format(45)}</span>
+            <span className="font-bold">
+              {currencyFormatter().format(5396)}
+            </span>
           </div>
           <CustomBtn title="Checkout" />
         </form>
