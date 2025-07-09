@@ -31,8 +31,8 @@ const CheckoutForm = () => {
         <div className="grid grid-cols-2 gap-4">
           <p>Payment method</p>
           <div className="flex flex-col gap-4">
-            <CustomRadio title="e-money" />
-            <CustomRadio title="cash on delivery" />
+            <CustomRadio value={true} title="e-money" />
+            <CustomRadio value={false} title="cash on delivery" />
           </div>
           <CustomInput title="e-money number" placeholder="238521993" />
           <CustomInput title="e-money pin" placeholder="6891" />
