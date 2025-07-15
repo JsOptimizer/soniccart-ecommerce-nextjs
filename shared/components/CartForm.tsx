@@ -14,8 +14,8 @@ type Props = {
 const CartForm: FC<Props> = ({ onClose, open }) => {
   return (
     <Modal className="" open={open} onClose={() => onClose(open)}>
-      <div className="container mt-20 flex items-start justify-end px-16  ">
-        <form className="bg-white min-w-[377px] rounded-md p-8 flex flex-col gap-4 text-sm ">
+      <div className="container mt-20 flex items-start justify-center sm:justify-end px-4 sm:px-16  ">
+        <form className="bg-white min-w-[377px] rounded-md p-4 sm:p-8 flex flex-col gap-4 text-sm ">
           <div className="flex items-center justify-between">
             <h6 className="font-bold uppercase">
               Cart {` `} {`(${0})`}
