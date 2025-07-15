@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FC, useState } from "react";
 import { navigationLinks } from "../constants/nav-link";
 import CartForm from "./CartForm";
+import SideMenu from "./SideMenu";
 
 type Props = {
   className?: string;
@@ -13,6 +14,7 @@ type Props = {
 
 const Header: FC<Props> = ({ className, title = null }) => {
   const [triggerCart, setTriggerCart] = useState(false);
+  const [activeSideMenu, setActiveSideMenu] = useState(false);
   return (
     <header
       className={cn(
@@ -21,13 +23,13 @@ const Header: FC<Props> = ({ className, title = null }) => {
       )}
     >
       <div className="mx-auto container text-white sm:py-4 p-4 sm:px-8 lg:px-16 flex justify-between relative">
-        <div className="lg:hidden">
+        <button className="lg:hidden" onClick={() => setActiveSideMenu(true)}>
           <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
             <g fill="#FFF" fillRule="evenodd">
               <path d="M0 0h16v3H0zM0 6h16v3H0zM0 12h16v3H0z" />
             </g>
           </svg>
-        </div>
+        </button>
         <div className="flex items-center gap-16">
           <Image
             src={"/audiophile.png"}
@@ -62,6 +64,11 @@ const Header: FC<Props> = ({ className, title = null }) => {
         </h1>
       )}
       <CartForm open={triggerCart} onClose={(open) => setTriggerCart(!open)} />
+
+      <SideMenu
+        open={activeSideMenu}
+        onClose={() => setActiveSideMenu(false)}
+      />
     </header>
   );
 };
