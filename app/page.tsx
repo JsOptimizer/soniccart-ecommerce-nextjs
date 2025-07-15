@@ -13,7 +13,7 @@ export default function Home() {
         <Header />
         <Hero />
       </div>
-      <section className="container  flex flex-col gap-8 sm:gap-16 lg:gap-32  w-full lg:px-16">
+      <section className="container p-4  flex flex-col gap-8 sm:gap-16 lg:gap-32  w-full lg:px-16">
         <ProductCategoryList />
         <Zx9Speaker />
         <Zx7Speaker />
