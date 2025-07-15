@@ -29,7 +29,7 @@ const ProductShowCase: FC<Props> = ({
   return (
     <article
       className={cn(
-        "flex items-center  lg:flex-row flex-col gap-16   lg:justify-between  w-full",
+        "flex items-center  lg:flex-row flex-col gap-16   lg:justify-between  w-full ",
         className
       )}
     >
@@ -38,16 +38,16 @@ const ProductShowCase: FC<Props> = ({
         {...source}
         className="h-[362px] w-full lg:h-[560px] lg:min-w-[540px]"
       />
-      <div className="flex flex-col items-center lg:items-start gap-4">
+      <div className="flex flex-col items-center lg:items-start gap-4 sm:px-16">
         {isNew && (
           <h3 className="uppercase tracking-[15px] text-brand ">new product</h3>
         )}
-        <p className="uppercase text-[40px] font-bold ">
+        <p className="uppercase text-[28px] text-center lg:text-left  sm:text-[40px] font-bold  ">
           {name.slice(0, nameBreak)}
           <br />
           {name.slice(nameBreak)}
         </p>
-        <p className="text-[15px] max-w-[445px] text-black/60 text-center lg:text-left ">
+        <p className="text-[15px] lg:max-w-[445px] text-black/60 text-center lg:text-left ">
           {desc}
         </p>
         <Link href={`/${path}/${id}`}>
