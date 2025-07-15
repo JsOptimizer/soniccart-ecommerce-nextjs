@@ -8,7 +8,7 @@ const Features: FC<Props> = ({ features, includes }) => {
     <section className="flex items-start justify-between flex-col sm:gap-16 lg:flex-row text-sm">
       <div className="flex flex-col gap-8">
         <h4 className="text-[32px] font-bold text-left">Features</h4>
-        <p className="max-w-[635px] text-[15px] text-black/60 ">
+        <p className="max-w-[635px] text-[15px] text-black/40 ">
           {features.split("\n\n").map((paragraph, index) => (
             <span key={index}>
               {paragraph}
