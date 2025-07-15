@@ -1,4 +1,5 @@
 import CustomBtn from "@/shared/components/form/CustomBtn";
+import Link from "next/link";
 
 const Zx7Speaker = () => {
   return (
@@ -7,10 +8,12 @@ const Zx7Speaker = () => {
         <h4 className="uppercase text-xl sm:text-[28px] font-bold font-manrope">
           zx7 speaker
         </h4>
-        <CustomBtn
-          title="see product"
-          className="bg-transparent text-black block uppercase border  hover:bg-black hover:text-white font-bold"
-        />
+        <Link href={"/speakers/5"}>
+          <CustomBtn
+            title="see product"
+            className="bg-transparent text-black block uppercase border  hover:bg-black hover:text-white font-bold"
+          />
+        </Link>
       </div>
     </section>
   );
