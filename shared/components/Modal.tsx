@@ -47,7 +47,7 @@ const Modal: FC<Props> = ({ open, onClose, children, className }) => {
     <section
       ref={backdropRef}
       className={cn(
-        "fixed w-screen h-screen top-0 left-0 bg-black/30 z-40 overflow-hidden flex justify-center items-start",
+        "fixed w-screen h-screen top-0 left-0 bg-black/30 z-30 overflow-hidden flex justify-center items-start",
         className
       )}
       onClick={handleBackdropClick}
