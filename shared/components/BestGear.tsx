@@ -1,12 +1,15 @@
+import CustomImage from "./CustomImage";
+
 const BestGear = () => {
   return (
     <section className="flex items-center justify-center flex-wrap-reverse gap-8   lg:justify-between ">
-      <div className="flex flex-col items-start   gap-4  ">
-        <p className="uppercase  font-bold font-manrope text-[40px] ">
+      <div className="flex flex-col  lg:items-start gap-4 sm:px-8  ">
+        <p className="uppercase text-center  lg:text-left  font-bold font-manrope text-[28px] sm:text-[40px]  ">
           bringing you the
-          <br /> <span className="text-brand">best</span> audio gear
+          <br />
+          <span className="text-brand">best</span> audio gear
         </p>
-        <p className="w-[445px] text-[15px] text-black-950/60 ">
+        <p className="lg:w-[445px] text-center lg:text-left text-[15px] text-black-950/60 ">
           Located at the heart of New York City, Audiophile is the premier store
           for high end headphones, earphones, speakers, and audio accessories.
           We have a large showroom and luxury demonstration rooms available for
@@ -15,7 +18,14 @@ const BestGear = () => {
           best place to buy your portable audio equipment.
         </p>
       </div>
-      <div className="bg-[url('/image-best-mob-gear.jpg')] sm:bg-[url('/image-best-tab-gear.jpg')] lg:bg-[url('/image-best-gear.jpg')] w-full h-[300px] lg:h-[588px] lg:w-[544px] bg-cover bg-no-repeat rounded-md" />
+
+      <CustomImage
+        alt={"mob-gear"}
+        mobile={"/image-best-mob-gear.jpg"}
+        tablet={"/image-best-tab-gear.jpg"}
+        desktop={"/image-best-gear.jpg"}
+        className="w-full lg:min-h-[500px] "
+      />
     </section>
   );
 };
