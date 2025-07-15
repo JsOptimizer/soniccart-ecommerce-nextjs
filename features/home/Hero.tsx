@@ -1,5 +1,6 @@
 "use client";
 import CustomBtn from "@/shared/components/form/CustomBtn";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -20,7 +21,10 @@ const Hero = () => {
             </p>
             <div className="inline-flex sm:justify-center lg:justify-normal">
               {" "}
-              <CustomBtn title="See Product" />
+              <Link href={"/headphones/4"}>
+                {" "}
+                <CustomBtn title="See Product" />
+              </Link>
             </div>
           </div>
         </div>
