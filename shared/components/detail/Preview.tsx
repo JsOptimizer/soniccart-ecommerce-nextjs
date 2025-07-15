@@ -45,7 +45,7 @@ const Preview: FC<Props> = ({
         </p>
         <div className="flex items-center gap-4">
           <CustomNumberCounter />
-          <CustomBtn title="Add to cart" className="py-4" />
+          <CustomBtn title="Add to cart" className="py-2" />
         </div>
       </div>
     </section>
