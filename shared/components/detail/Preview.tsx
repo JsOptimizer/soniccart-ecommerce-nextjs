@@ -17,7 +17,7 @@ const Preview: FC<Props> = ({
   nameBreak,
 }) => {
   return (
-    <section className="flex flex-col  sm:flex-row items-center lg:justify-between text-sm sm:gap-8">
+    <section className="flex flex-col   sm:flex-row items-center lg:justify-between text-sm gap-8">
       <CustomImage
         alt={name}
         desktop={image?.desktop}
@@ -29,12 +29,12 @@ const Preview: FC<Props> = ({
         {isNew && (
           <h5 className="uppercase tracking-[15px] text-brand ">new product</h5>
         )}
-        <h3 className="uppercase text-[40px] font-bold ">
+        <h3 className="uppercase text-[28px] sm:text-[40px] font-bold ">
           {name.slice(0, nameBreak)}
           <br />
           {name.slice(nameBreak)}
         </h3>
-        <p className="text-[15px] max-w-[445px] text-black/60 text-center sm:text-left ">
+        <p className="text-[15px] lg:max-w-[445px] text-black/40 text-left ">
           {description}
         </p>
         <p className="font-bold">

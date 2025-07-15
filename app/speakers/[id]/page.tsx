@@ -18,7 +18,7 @@ const page: FC<Props> = async ({ params }) => {
   return (
     <main className="w-full flex flex-col gap-4 items-center">
       <Header className="bg-black static" />
-      <section className=" container p-8 flex flex-col gap-32 w-full lg:px-16">
+      <section className=" container p-4 flex flex-col gap-32 w-full lg:px-16">
         <ProductDetail {...(product as TProduct)} listPath="speakers" />
         <ProductsList />
         <ProductCategoryList />

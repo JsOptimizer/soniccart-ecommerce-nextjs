@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <main className="relative flex flex-col items-center gap-8 sm:gap-16 lg:gap-32  font-manrope z-0 w-full">
       <div className="w-full">
-        <Header />
+        <Header className="" />
         <Hero />
       </div>
-      <section className="container  flex flex-col gap-8 sm:gap-16 lg:gap-32  w-full lg:px-16">
+      <section className="container p-4  flex flex-col gap-8 sm:gap-16 lg:gap-32  w-full lg:px-16">
         <ProductCategoryList />
         <Zx9Speaker />
         <Zx7Speaker />

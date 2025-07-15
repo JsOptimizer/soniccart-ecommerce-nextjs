@@ -2,7 +2,7 @@ import { CustomInput, CustomRadio } from "@/shared/components";
 
 const CheckoutForm = () => {
   return (
-    <section className="bg-white p-8 flex flex-col gap-8">
+    <section className="bg-white p-4 lg:p-8 flex flex-col gap-8">
       <h3 className="font-bold uppercase">Checkout</h3>
 
       <div className="flex w-full flex-col gap-4">

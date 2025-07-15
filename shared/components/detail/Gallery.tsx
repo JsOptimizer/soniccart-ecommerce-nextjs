@@ -13,7 +13,7 @@ const Gallery: FC<Props> = ({ gallery }) => {
           desktop={gallery.first.desktop}
           tablet={gallery.first.tablet}
           mobile={gallery.first.mobile}
-          className="w-full  object-cover h-full"
+          className=" w-full  object-cover  h-full"
         />
       </div>
       <div className="row-span-2 col-span-3 order-3 sm:order-none ">
