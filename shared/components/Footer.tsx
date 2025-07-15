@@ -5,12 +5,12 @@ import { navigationLinks } from "../constants/nav-link";
 const Footer = () => {
   return (
     <footer className="w-full bg-black flex items-center justify-center mt-auto">
-      <section className="w-full mt-auto text-white container p-8 lg:p-16  items-center justify-center sm:items-start sm:justify-normal flex flex-col gap-8">
-        <div className="flex  lg:items-center gap-4 sm:justify-between flex-col sm:flex-row w-full">
+      <section className="w-full mt-auto text-white container p-4 sm:p-8 lg:p-16  items-center justify-center sm:items-start sm:justify-normal flex flex-col gap-8">
+        <div className="flex items-center   lg:items-center gap-8 sm:gap-4 sm:justify-between flex-col sm:flex-row w-full ">
           <Image src={"/audiophile.png"} alt="logo" width={100} height={50} />
           <ul className="flex items-center flex-col sm:flex-row gap-2 sm:gap-6 uppercase text-sm">
             {navigationLinks.map(({ path, title }, idx) => (
-              <li key={idx} className="hover:text-brand">
+              <li key={idx} className="hover:text-brand text-[13px] ">
                 <Link href={path}>{title}</Link>
               </li>
             ))}
@@ -25,7 +25,9 @@ const Footer = () => {
         </p>
 
         <div className="flex flex-col gap-4 sm:flex-row items-center sm:justify-between w-full">
-          <p className="text-sm">&copy; 2021. All Rights Reserved</p>
+          <p className="text-sm text-neutral-50/40">
+            &copy; 2021. All Rights Reserved
+          </p>
           <ul className="flex items-center gap-4 lg:relative -top-10 ">
             <li>
               <Link href={""}>

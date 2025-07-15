@@ -14,7 +14,7 @@ const CartPreview = () => {
     setValidateCheckout(true);
   };
   return (
-    <section className="bg-white p-8 rounded-md flex flex-col gap-4 h-auto text-sm text-black/50">
+    <section className="bg-white p-4 sm:p-8 rounded-md flex flex-col gap-4 h-auto text-sm text-black/50">
       <h4 className="font-bold text-xl uppercase">Summary</h4>
       {products.map(({ name, path, price, quantity }, idx) => (
         <div key={idx} className="flex items-center justify-between">

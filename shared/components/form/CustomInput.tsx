@@ -34,7 +34,7 @@ const CustomInput: FC<Props> = ({
         type="text"
         name={name}
         className={cn(
-          `p-3 border-neutral-100 border-2  min-w-[300px] rounded-lg w-full focus-visible:outline-brand ${
+          `p-3 border-neutral-100 border-2  lg:min-w-[300px] rounded-lg w-full focus-visible:outline-brand ${
             isError && "focus-visible:outline-red-700 border-red-700"
           } `
         )}

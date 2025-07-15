@@ -20,7 +20,7 @@ const Header: FC<Props> = ({ className, title = null }) => {
         className
       )}
     >
-      <div className="mx-auto container text-white py-4 sm:px-8 lg:px-16 flex justify-between relative">
+      <div className="mx-auto container text-white sm:py-4 p-4 sm:px-8 lg:px-16 flex justify-between relative">
         <div className="flex items-center gap-16">
           <div className="lg:hidden">
             <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
