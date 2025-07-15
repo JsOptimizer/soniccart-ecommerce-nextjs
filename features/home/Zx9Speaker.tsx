@@ -5,7 +5,7 @@ import CustomBtn from "@/shared/components/form/CustomBtn";
 
 const Zx9Speaker = () => {
   return (
-    <section className="bg-brand rounded-lg relative h-auto lg:min-h-[480px] lg:h-[65vh] z-0 overflow-hidden sm:p-16 lg:p-32">
+    <section className="bg-brand p-8 rounded-lg relative h-auto lg:min-h-[480px] lg:h-[65vh] z-0 overflow-hidden sm:p-16 lg:p-32">
       <svg
         className="absolute left-0 right-0  lg:-left-32  lg:-top-10  z-0 flex items-center justify-center"
         width="944"
@@ -19,12 +19,12 @@ const Zx9Speaker = () => {
         </g>
       </svg>
       <div className="container flex flex-col items-center gap-16 lg:flex-row lg:justify-between  lg:items-start  relative z-20">
-        <div className="sm:bg-[url('/image-speaker-tab-zx9.png')] sm:w-56 lg:bg-[url('/image-speaker-zx9.png')] h-56 lg:size-[55vh]  bg-contain bg-no-repeat  " />
+        <div className="bg-[url('/image-speaker-mob-zx9.png')]  sm:bg-[url('/image-speaker-tab-zx9.png')] w-56 lg:bg-[url('/image-speaker-zx9.png')] h-56 lg:size-[55vh]  bg-contain bg-no-repeat" />
         <div className="flex flex-col items-center justify-center  sm:w-auto  lg:items-start text-white gap-4">
           <h4 className="text-[56px] text-center lg:text-left font-bold uppercase">
             ZX9 <br /> SPEAKER
           </h4>
-          <p className="text-sm lg:w-auto max-w-96 text-center lg:text-left">
+          <p className="text-sm lg:w-auto lg:max-w-96 text-center lg:text-left">
             Upgrade to premium speakers that are phenomenally built to deliver
             truly remarkable sound.
           </p>
