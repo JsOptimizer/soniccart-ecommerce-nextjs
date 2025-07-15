@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { FC } from "react";
 import { cartProduct } from "../constants/cart";
 import { currencyFormatter } from "../lib";
@@ -12,10 +14,15 @@ type Props = {
 };
 
 const CartForm: FC<Props> = ({ onClose, open }) => {
+  const router = useRouter();
+
+  const handlerSubmit = () => {
+    router.push("/checkout");
+  };
   return (
     <Modal className="" open={open} onClose={() => onClose(open)}>
       <div className="container mt-20 flex items-start justify-center sm:justify-end px-4 sm:px-16  ">
-        <form className="bg-white min-w-[377px] rounded-md p-4 sm:p-8 flex flex-col gap-4 text-sm ">
+        <div className="bg-white min-w-[377px] rounded-md p-4 sm:p-8 flex flex-col gap-4 text-sm ">
           <div className="flex items-center justify-between">
             <h6 className="font-bold uppercase">
               Cart {` `} {`(${0})`}
@@ -48,8 +55,8 @@ const CartForm: FC<Props> = ({ onClose, open }) => {
               {currencyFormatter().format(5396)}
             </span>
           </div>
-          <CustomBtn title="Checkout" />
-        </form>
+          <CustomBtn title="Checkout" onClick={handlerSubmit} />
+        </div>
       </div>
     </Modal>
   );
