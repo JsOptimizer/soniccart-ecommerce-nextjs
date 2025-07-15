@@ -2,6 +2,7 @@ import { Modal } from "@/shared/components";
 import CustomBtn from "@/shared/components/form/CustomBtn";
 import { currencyFormatter } from "@/shared/lib";
 import Image from "next/image";
+import Link from "next/link";
 import { FC } from "react";
 
 type Props = {
@@ -17,7 +18,7 @@ const Checkoutvalidate: FC<Props> = ({ open, onClose }) => {
       onClose={onClose}
     >
       <section className="container flex  items-center justify-center">
-        <div className="min-w-[500px] rounded-md bg-white flex flex-col gap-8 p-8 ">
+        <div className=" p-4 rounded-md bg-white flex flex-col gap-4 sm:gap-8 sm:p-8 ">
           <div>
             <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
               <g fill="none" fillRule="evenodd">
@@ -37,7 +38,7 @@ const Checkoutvalidate: FC<Props> = ({ open, onClose }) => {
           </h4>
           <p>You will receive an email confirmation shortly.</p>
 
-          <div className="grid grid-flow-col">
+          <div className="grid grid-cols-1 sm:grid-flow-col">
             <div className="bg-neutral-100 rounded-l-md p-4 flex flex-col justify-center gap-4">
               <div className="flex items-start gap-4">
                 <Image
@@ -66,7 +67,10 @@ const Checkoutvalidate: FC<Props> = ({ open, onClose }) => {
             </div>
           </div>
 
-          <CustomBtn title="Back To Home " />
+          <Link href={"/"}>
+            {" "}
+            <CustomBtn title="Back To Home " className="w-full" />
+          </Link>
         </div>
       </section>
     </Modal>
