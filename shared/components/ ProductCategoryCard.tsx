@@ -12,7 +12,7 @@ const ProductCategoryCard: FC<Props> = ({ name, path, source }) => {
   return (
     <Link
       href={path}
-      className="relative rounded-lg p-4 group flex flex-col  justify-end  items-center  bg-neutral-50 w-full h-[204px] cursor-pointer"
+      className="relative rounded-lg p-4 group flex flex-col mt-28 sm:mt-4  justify-end  items-center  bg-neutral-50 w-full h-[204px] cursor-pointer"
     >
       <Image
         src={source}
