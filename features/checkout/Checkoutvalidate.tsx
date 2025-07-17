@@ -52,7 +52,7 @@ const Checkoutvalidate: FC<Props> = ({ open, onClose }) => {
                   <span className="uppercase font-bold text-black">
                     name product
                   </span>
-                  <span className="">{currencyFormatter().format(2000)}</span>
+                  <span className="">{currencyFormatter().format(200)}</span>
                 </div>
                 <span>x{4}</span>
               </div>
